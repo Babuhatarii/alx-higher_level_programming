@@ -1,20 +1,19 @@
 #!/usr/bin/python3
 """
-Module containing the Square class.
+contains class MyInt
 """
-Rectangle = __import__('9-rectangle').Rectangle
 
 
-class Square(Rectangle):
-    """A class representing a square."""
+class MyInt(int):
+    """rebelver of integer, perfect for opposite day!"""
+    def __new__(cls, *args, **kwargs):
+        """creates new instance of the class"""
+        return super(MyInt, cls).__new__(cls, *args, **kwargs)
 
-    def __init__(self, size):
-        """Initialize a Square instance."""
-        self.__size = 0
-        self.integer_validator("size", size)
-        self.__size = size
-        super().__init__(size, size)
+    def __eq__(self, other):
+        """whatwas != is now =="""
+        return int(self) != other
 
-    def __str__(self):
-        """Return a string representation of the Square."""
-        return "[Square] {}/{}".format(self.__size, self.__size)
+    def __ne__(self, other):
+        """whatwas == is now !="""
+        return int(self) == other
