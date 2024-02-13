@@ -1,0 +1,1 @@
+Welcome to my JavaScript Warmup repository! This repository is designed to help you get started with JavaScript and brush up on your skills. Whether you're new to JavaScript or looking to refresh your knowledge, you'll find a variety of warm-up exercises here to challenge and improve your understanding of the language.
